@@ -181,11 +181,11 @@ public class GPSComputer {
 
 		// TODO - START
 		System.out.println("Total time: " + GPSUtils.formatTime(totalTime()));
-		System.out.println("Total distance: " + totalDistance());
-		System.out.println("Total elevation: " + totalElevation());
-		System.out.println("Max speed: " + maxSpeed());
-		System.out.println("Average speed: " + averageSpeed());
-		System.out.println("Energy: " + totalKcal(WEIGHT));
+		System.out.println("Total distance: " + GPSUtils.formatDouble(totalDistance()));
+		System.out.println("Total elevation: " + GPSUtils.formatDouble(totalElevation()));
+		System.out.println("Max speed: " + GPSUtils.formatDouble(maxSpeed()));
+		System.out.println("Average speed: " + GPSUtils.formatDouble(averageSpeed()));
+		System.out.println("Energy: " + GPSUtils.formatDouble(totalKcal(WEIGHT)));
 		
 		// TODO - SLUTT
 		System.out.println("==============================================");
